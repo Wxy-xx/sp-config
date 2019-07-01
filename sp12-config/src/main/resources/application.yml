@@ -10,6 +10,12 @@ spring:
         native:
           search-locations: classpath:/config
 
+  instance:
+
+    prefer-ip-address: true
+
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+ 
 #        git:
 #          uri: https://github.com/你的用户路径/sp-config
 #          searchPaths: config
