@@ -8,14 +8,10 @@ spring:
       profile: dev
 
     inetutils:
-
       ignored-interfaces:
-
         - VM.*
-
       preferred-networks:
-
-        - 196.49.3.112      
+        - 196.49.3    
 eureka:
   client:
     service-url:
